@@ -1,0 +1,104 @@
+.character-main{
+    width: 80%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.cards-container {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: black;
+    font-weight: lighter;
+}
+.cards-container.humano {
+    background-image: linear-gradient(to right top, #379237, #74a644, #a6b959, #d4cd74, #ffe194);
+}
+
+.cards-container.alien {
+    background-image: linear-gradient(to right bottom, #3c2317, #704719, #98750a, #adad00, #a8eb12);
+}
+
+.cards-container.desconocido {
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.cards-container.carga{
+    border: 1px solid black;
+    background-color: gray;
+    height: 350px;
+}
+.imagen {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+.descripcion {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.identificador {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.estado {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.bx.bxs-circle.alive {
+    color: green;
+    font-size: 10px;
+}
+
+.bx.bxs-circle.dead {
+    color: red;
+    font-size: 10px;
+}
+
+.bx.bxs-circle.unknown {
+    color: gray;
+    font-size: 10px;
+}
+
+.activo {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.activo__div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
