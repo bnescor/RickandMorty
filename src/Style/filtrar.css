@@ -16,10 +16,12 @@
     background-color: white;
     align-items: center;
 }
-.filter_text input{
+
+.filter_text input {
     text-align: center;
     font-size: 18px;
 }
+
 .barra {
     width: 16rem;
     height: 100%-2.8px;
@@ -32,24 +34,27 @@
 .off {
     display: none;
 }
-.on{
+
+.on {
     display: flex;
-    cursor: pointer;
     text-decoration: none;
     color: black;
 }
-.on:active{
+
+.on:active {
     color: none;
 }
 
-.bx-x {
+.bx.bx-x {
     padding-right: 5px;
     font-size: 20px;
 }
-.bx-search{
+
+.bx-search {
     font-size: 20px;
 
 }
+
 .submit {
     width: 1.8rem;
     height: 100%;
@@ -64,4 +69,15 @@
 
 .submit:active {
     color: none;
+}
+
+@media (650px>=width) {
+    .filtrar {
+        width: auto;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        transform: scale(0.9);
+    }
 }

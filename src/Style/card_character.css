@@ -1,11 +1,13 @@
-.character-main{
-    width: 80%;
-    height:auto;
+.character-main {
+    width: 85%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
+
 .cards-container {
     width: 250px;
     height: auto;
@@ -18,6 +20,7 @@
     color: black;
     font-weight: lighter;
 }
+
 .cards-container.humano {
     background-image: linear-gradient(to right top, #379237, #74a644, #a6b959, #d4cd74, #ffe194);
 }
@@ -29,11 +32,13 @@
 .cards-container.desconocido {
     background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
-.cards-container.carga{
+
+.cards-container.carga {
     border: 1px solid black;
     background-color: gray;
     height: 350px;
 }
+
 .imagen {
     margin-top: 20px;
     display: flex;
@@ -42,7 +47,7 @@
     height: 150px;
 }
 
-img {
+.imagen img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 20px;
@@ -58,6 +63,8 @@ img {
 }
 
 .identificador {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -88,7 +95,7 @@ img {
 }
 
 .activo {
-    width: 250px;
+    width: 100%;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -101,4 +108,52 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (650px>=width) {
+    .character-main {
+        width: 90%;
+    }
+
+    .cards-container {
+        width: 230px;
+        border-radius: 10px;
+    }
+
+    .descripcion {
+        width: 100%;
+    }
+
+    .imagen {
+        width: 135px;
+        height: 135px;
+    }
+}
+
+@media (480px>=width) {
+    .identificador {
+        font-size: 15px;
+    }
+
+    .character-main {
+        width: 100%;
+    }
+
+    .cards-container {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .descripcion {
+        width: 100%;
+    }
+
+    .imagen {
+        width: 95px;
+        height: 95px;
+    }
+
+    .imagen img {
+        border-radius: 50%;
+    }
 }

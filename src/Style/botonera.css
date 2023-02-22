@@ -2,6 +2,7 @@
     width: 80%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 8px;
     padding-bottom: 10px;
@@ -19,7 +20,22 @@
     background-color: #fff;
     color: black;
 }
-.here{
+.cuadro.here{
     background-color: yellow;
     font-weight: bold;
+}
+@media (650px>=width) {
+    .cuadro{
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: #fff;
+        color: black;
+    }
+
 }

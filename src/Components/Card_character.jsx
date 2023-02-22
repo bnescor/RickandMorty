@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Style/card_character.css'
+import '../Stylecard_character.css'
 import { Loader_character } from './Loader_character'
 
 const Card_character = ({ getdata, loader_character }) => {

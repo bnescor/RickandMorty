@@ -63,16 +63,16 @@ const Botonera_location = ({ Numpages, setIndexfirts, setIndexlast, indexlast })
         setIndexfirts((12 * pages) - 12)
     }
     return (
-        <article className='botonera-main'>
+        <article className='botonera-main_2'>
             {Curenpages === 1 ? '' :
-                <button className='cuadro' onClick={BackPages}>
+                <button className='cuadro_2' onClick={BackPages}>
                     <i className='bx bx-chevron-left'></i>
                 </button>}
 
             {
                 conteo.map((user, index) => {
                     return <button key={index}
-                        className={Curenpages === user ? 'cuadro here' : 'cuadro'}
+                        className={Curenpages === user ? 'cuadro_2 here' : 'cuadro_2'}
                         onClick={conteo.length - 1 === index && user < Numpages ? () => {
                             setCurenpages(user)
                             setIndexFirts(IndexFirts + 6);
@@ -88,7 +88,7 @@ const Botonera_location = ({ Numpages, setIndexfirts, setIndexlast, indexlast })
                 })
             }
             {Curenpages === Numpages ? '' :
-                <button className='cuadro' onClick={NextPages}>
+                <button className='cuadro_2' onClick={NextPages}>
                     <i className='bx bx-chevron-right'></i>
                 </button>}
         </article>
