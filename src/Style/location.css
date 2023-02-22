@@ -1,9 +1,17 @@
-.Locations-main{
+.Locations-main {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 2.6rem;
-
+}
+@media (380px>=width) {
+    .select{
+        width: 60%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -43,22 +43,21 @@
 .menu {
     display: none;
 }
-.bx{
+
+.bx {
     font-size: 25px;
 }
 
 @media (650px>=width) {
     .botonera {
-        height: 50px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        font-size: 1.2rem;
         position: relative;
         padding: 0.6rem;
     }
-    .enlace{
+
+    .enlace {
         width: 45%;
         height: 100vh;
         display: flex;
@@ -72,6 +71,10 @@
         background-color: #815B5B;
         transition: all 0.3s ease-in-out;
         z-index: 100;
+    }
+
+    .link {
+        font-size: 18px;
     }
 
     .enlace.on {

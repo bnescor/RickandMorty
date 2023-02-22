@@ -80,7 +80,7 @@ const Location = () => {
     <article className='Locations-main'>
       {loader ?
         <>
-          <Select
+          <Select className='select'
             options={getpush}
             onChange={getchange}
           />

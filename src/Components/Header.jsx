@@ -9,7 +9,6 @@ const Header = () => {
     <header className='main'>
       <nav className='botonera'>
         <div className={Load ? 'enlace on' : 'enlace off'}>
-          <NavLink end className={({ isActive }) => isActive ? 'link here' : 'link'} to='/'>Home</NavLink>
           <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Character/1'>Character</NavLink>
           <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Location'>Locacion</NavLink>
           <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Favorito'>Favorito</NavLink>

@@ -29,7 +29,6 @@ const Character = () => {
     setValor_anterior(pages)
     setLoader_character(false)
   }
-  console.log(getdata)
   return (
     <div className='Character'>
       {loader ?

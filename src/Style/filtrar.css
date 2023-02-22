@@ -73,11 +73,6 @@
 
 @media (650px>=width) {
     .filtrar {
-        width: auto;
-        height: 2rem;
-        display: flex;
-        flex-direction: row;
-        border-radius: 15px;
         transform: scale(0.9);
     }
 }

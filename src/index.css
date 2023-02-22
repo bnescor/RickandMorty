@@ -15,4 +15,5 @@ body {
     align-items: center;
     gap: 30px;
     overflow: auto;
+    font-family: 'Montserrat', sans-serif;
 }

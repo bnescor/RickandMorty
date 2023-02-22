@@ -16,7 +16,7 @@ const Card_character = ({ getdata, loader_character }) => {
                                 </div>
                                 <div className='descripcion'>
                                     <div className='identificador'>
-                                        <h3>{user.name}</h3>
+                                        <h4>{user.name}</h4>
                                         <div className='estado'>
                                             <i className={
                                                 user.status === 'Alive' ? 'bx bxs-circle alive'

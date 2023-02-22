@@ -1,4 +1,4 @@
-import { redirect, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Character from './Components/Character'
 import Location from './Components/Locacion'
@@ -14,19 +14,16 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+          <Route path="/" element={<Navigate to="/Character/1" />} />
           <Route
-            path='/'
-            element={<Home />}
-          />
-          <Route
-            path='/Character/:pages'
+            exct path='/Character/:pages'
             element={<Character />}
           />
           <Route
-            path='/Location'
+            exct path='/Location'
             element={<Location />}
           />
-          <Route path='/Character/search/:pages/:name' element={<Character_search />} />
+          <Route exct path='/Character/search/:pages/:name' element={<Character_search />} />
         </Routes>
       </div>
     </>
