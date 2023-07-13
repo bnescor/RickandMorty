@@ -3,7 +3,6 @@ import './App.css'
 import Character from './Components/Character'
 import Location from './Components/Locacion'
 import Header from './Components/Header'
-import Home from './Components/Home'
 import Particle from './Components/Particle'
 import Character_search from './Components/Character_search'
 

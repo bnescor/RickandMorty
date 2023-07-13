@@ -11,7 +11,6 @@ const Header = () => {
         <div className={Load ? 'enlace on' : 'enlace off'}>
           <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Character/1'>Character</NavLink>
           <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Location'>Locacion</NavLink>
-          <NavLink className={({ isActive }) => isActive ? 'link here' : 'link'} to='/Favorito'>Favorito</NavLink>
         </div>
         <button onClick={menuLoad} className={Load ? 'menu' : 'menu here'}>{Load ?
           <i className='bx bx-menu-alt-right'></i>
